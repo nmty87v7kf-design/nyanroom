@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>保護猫カフェ/にゃんルーム</title>
+    <link href="css/destyle.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/neko.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/pagetop-link.css" rel="stylesheet">
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    
+    
+</head>
+<body>
+     <header>
+    <p><a href="index.html"><img src="images/logo.png" alt="にゃんルームのロゴ"></a></p>
+    <nav id="drawer-nav">
+        <ul>
+            <li><a href="index.html">トップページ</a></li>
+            <li><a href="cat.html">お部屋のご案内</a></li>
+            <li><a href="#">同居猫の紹介</a></li>
+            <li><a href="#">カフェメニュー</a></li>
+            <li><a href="#">保護猫カフェについて</a></li>
+            <li><a href="#">ご予約・お問い合わせ</a></li>
+        </ul>
+     </nav>
+     <div id="menubtn"><img src="images/nav.png" alt="menuボタン"></div>
+     <div id="drawer-bg"></div>
+
+     </header>
+
+
+<main>
+    <h1>アンケートに答えて半額クーポンゲット！</h1>
+    <p>アンケートにお答えいただくと、次回ご来店時に使える「半額クーポン」をプレゼントします。</p>
+
+    <h2>以下のアンケートにお答えください</h2>
+    <form action="dummy.php" method="post">
+        <section id="q1">
+            <h3>お気に入りの猫はいましたか？（複数選択可）</h3>
+            <label><input type="checkbox" name="お気に入りのねこ" value="ブウくん">ブウくん</label>
+            <label><input type="checkbox" name="お気に入りのねこ" value="ワラビくん">ワラビくん</label>
+            <label><input type="checkbox" name="お気に入りのねこ" value="キイくん">キイくん</label>
+            <label><input type="checkbox" name="お気に入りのねこ" value="ミイちゃん">ミイちゃん</label>
+        </section>
+        <section id="q2">
+            <h3>にゃんルームのご利用は？</h3>
+            <label><input type="radio" name="利用回数" value="1回" checked>はじめて</label>
+            <label><input type="radio" name="利用回数" value="2~4回">2~4回</label>
+            <label><input type="radio" name="利用回数" value="5~7回">5~7回</label>
+            <label><input type="radio" name="利用回数" value="8回~">8回~</label>
+        </section>
+        <section id="q3">
+            <h3>今回ご利用のお部屋は？</h3>
+            <label for="room">ご利用のお部屋</label>
+                <select name="利用した部屋" id="room">
+                    <option value="1F">1Fにゃんルーム</option>
+                    <option value="2F" selected>2Fにゃんルーム</option>
+                    <option value="3F">3Fにゃんルーム</option>
+                </select>
+        </section>
+        <section id="q4">
+            <h3>お得な情報をメールでご案内</h3>
+                <p>クーポンをお送りします。メールアドレスとお名前をご入力ください。</p>
+            <label for="mail">メールアドレス</label><input type="email" name="メールアドレス" id="mail"><br>
+            <label for="name">お名前</label><input type="text" name="お名前" id="name">
+        </section>
+        <section id="q5">
+            <h3>よろしければ、ご意見・ご要望・ご感想をお聞かせください</h3>
+            <label for="message">ご意見・ご要望</label>
+                <textarea name="ご意見・ご要望" id="message" rows="6" cols="50" placeholder="ご意見・ご要望・ご感想をお聞かせください"></textarea>
+        </section>
+        <input type="submit" name="送信">
+    </form>
+    <p id="page-top"><a href="#"><span>Page Top</span></a></p>        
+</main>
+    <footer>
+    <p>2022 &copy; <a href="mailto:sample@tou-xxxx">TOU-WEB</a></p>
+     </footer>
+
+     <script src="js/neko.js"></script>
+     <script src="js/pagetop-link.js"></script>
+</body>
+</html>

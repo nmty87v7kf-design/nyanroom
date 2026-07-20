@@ -1,0 +1,125 @@
+
+#page-top {
+	position: fixed;
+	right: 1%;
+	bottom:80px;
+	z-index: 2;
+	opacity: 0;
+	transform: translateY(150px);
+}
+
+#page-top.UpMove{
+	animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(150px);
+  }
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+#page-top.DownMove{ 
+	animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime{
+  from {
+  	opacity: 1;
+	transform: translateY(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateY(150px);
+  }
+}
+
+
+#page-top a {
+    
+	display: block;
+	width: 100px;
+	height: 100px;
+	color: #333;
+	text-align: center;
+	text-transform: uppercase; 
+	text-decoration: none;
+	font-size:0.6rem;
+	background-image: url("../images/btn_top.png");
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: 80% auto;
+}
+
+#page-top.floatAnime a{
+	width: 100px;
+	height: 130px;
+	background: url("../images/btn_top2.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: contain;
+	animation: floatAnime 2s linear infinite;
+	opacity: 0;
+}
+
+@keyframes floatAnime {
+  0% { transform: translateX(0); opacity: 0; }
+  25% { transform: translateX(-6px);opacity: 1; }
+  50% { transform: translateX(0) }
+  100% { transform: translateX(6px);opacity: 1; }
+}
+
+
+#page-top span{
+    position: absolute;
+    bottom: -25px;
+    right: 25px;
+	color: #666;
+}
+
+
+@media screen and (max-width:959px){
+	#page-top {
+		position: fixed;
+		right: 1%;
+		bottom:90px;
+		z-index: 2;
+		opacity: 0;
+		transform: translateY(150px);
+		}
+	
+	#page-top a {
+		
+		display: block;
+		width: 60px;
+		height: 60px;
+		color: #333;
+		text-align: center;
+		text-transform: uppercase; 
+		text-decoration: none;
+		font-size:0.6rem;
+		background-image: url("../images/btn_top.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	#page-top.floatAnime a{
+		width: 100px;
+		height: 130px;
+		background: url("../images/btn_top2.png") ;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		animation: floatAnime 2s linear infinite;
+		opacity: 0;
+	}
+	
+	#page-top span{
+		display: none;
+	}
+}

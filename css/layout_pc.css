@@ -1,0 +1,106 @@
+@media screen and (min-width:960px) {
+
+
+    
+/* 共通デザイン */
+/* body{
+    font-family:"Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    line-height: 160%;
+    color: rgb(90,90,90);
+} */
+/* img{
+    width:100%;
+    max-width: 100%;
+    height: auto;
+} */
+h2{
+    font-size: 28px;
+    /* font-weight: bold;
+    color: rgb(185,125,75);
+    line-height: 150%;
+    text-align: center; */
+    width: 960px;
+    /* margin: 0 auto 30px;
+    border-bottom: 2px solid rgb(185,125,75);*/
+} 
+/* h3{
+    font-size: 21px;
+    padding-bottom: 10px;
+}
+.cont_link,
+.cont_link:visited{
+    color: rgb(0, 60, 255);
+    text-decoration: underline;
+} */
+
+/* 共通レイアウト */
+/* header,
+nav,
+main,
+section,
+section>div,
+footer{
+    width: 100%;
+} */
+
+/* ヘッダー */
+header{
+    /* background-color: rgb(210,180,175); */
+    padding-top: 10px;
+    display: grid; 
+    grid-template-columns: 1fr 280px 1fr; 
+    grid-template-rows: 80px 1fr 1fr; 
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.45);
+        position: static;
+}
+header>p{
+    z-index: 10;
+    grid-area: 1 / 2 / 3 / 3;
+        width: 100%;
+        margin: auto;
+        position: static;
+        top: 0;
+}
+
+/* ナビゲーション */
+nav{
+        display: block;
+    background-color: rgb(255,255,255);
+    padding-top: 30px;
+    grid-area: 2 / 1 / 4 / 4;
+}
+nav ul{
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width:960px;
+    margin: auto;
+    list-style-type: none;
+}
+nav a{
+    display: block;
+    padding: 20px 10px;
+}
+nav a:link,a:visited{
+    color:rgb(51,51,51);
+    text-decoration: none;
+}
+nav a:hover{
+    background-color:rgb(255,210,210) ;
+    color: rgb(200,50,0);
+}
+
+/* フッター */
+/* footer{
+    background-color: rgb(210,180,175);
+    padding: 40px 0 25px 0;
+}
+footer p{
+    text-align: center;
+    font-size: 14px;
+} */
+
+}

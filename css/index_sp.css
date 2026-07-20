@@ -1,0 +1,292 @@
+/* コンテンツ共通レイアウト・デザイン */
+#cont-1,
+#cont-2,
+#cont-3,
+#cont-4,
+#cont-5{
+    background-image: url(../images/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 50vh;
+}
+#cont-1>div,
+#cont-3>div,
+#cont-5>div{
+    background-color: rgb(255,240,235);
+    padding: 40px 0;
+}
+#cont-2>div,
+#cont-4>div{
+    background-color: rgb(255,255,255);
+    padding: 80px 0;
+}
+#cont-1 dl,
+#room-container,
+#info-container,
+#open,
+#access-container,
+#cont-5 dl
+{
+        width:100%;
+    /*margin: auto;*/
+    display: flex;
+    justify-content: space-around;
+        flex-flow: row wrap;
+}
+#cont-1 p,
+#cont-2>div>p:last-of-type{
+        width: 100%;
+    /*margin: auto;*/
+    text-align: right;
+}
+
+/* キービジュアル・キャッチ */
+h1{
+    background-image: url(../images/bg_h1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    text-align: right;
+        font-size: 5vmin;
+        height: 100vh;
+    font-weight: bold;
+        padding: 80vh 5% 10vh 0;
+    color: rgb(255,255,255);
+    line-height: 140%;
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.75);
+}
+
+/* リード文 */
+#lead{
+        height: 100%;
+        padding: 65vh 0 0 0;
+        background-image: url(../images/txtimg_1.jpg);
+        background-position: top center ;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+}
+#lead p{
+        width: 100%;
+        padding: 10px 5% 40px 5%;
+    /*margin: auto;*/
+    /* background-image: url(../images/txtimg_1.jpg);
+    background-position: 100% 80% ;
+    background-repeat: no-repeat;
+    background-size: 385px auto; */
+    /*padding: 160px 410px 160px 0;*/
+        line-height: 30px;
+        background-color: rgb(255,255,255);
+}
+
+/* 同居中の猫ちゃんたち */
+#cont-1 dl{
+    margin-bottom: 80px;
+}
+#cont-1 dl div{
+        width: 45%;
+    display: flex;
+    flex-flow: column wrap;
+}
+#cont-1 dt{
+    order: 2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#cont-1 dd{
+    order: 3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#cont-1 dd:last-of-type{
+    order: 1;
+    text-align: center;
+}
+#cont-1 img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+/* お部屋のご案内 */
+#cont-2{
+    background-image: url(../images/bg_2.jpg);
+}
+#cont-2 h2+p{
+        width:100%;
+    /*margin: 0 auto;*/
+    text-align: center;
+    margin-bottom: 30px;
+}
+#room-container{
+        padding: 0 5% 20px 5%;
+    /* padding-bottom: 20px; */
+}
+#room-container section{
+    width: 100%;
+}
+#room-container h3{
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+}
+#room-container section:first-child h3{
+    background-image: url(../images/illust_4.png);
+}
+#room-container section:nth-child(2) h3{
+    background-image: url(../images/illust_2.png);
+}
+#room-container section:last-child h3{
+    background-image: url(../images/illust_3.png);
+    background-size: auto 80%;
+}
+#room-container img{
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* ご利用案内と料金 */
+#cont-3{
+    background-image: url(../images/bg_3.jpg);
+}
+#cont-3>div>p{
+        width: 100%;
+    /*margin: auto;*/
+    /*padding-right: 420px;*/
+        padding: 65% 5% 40px 5%;
+    /* padding-bottom: 40px; */
+    background-image: url(../images/txtimg_2.jpg);
+    background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 90% auto;
+}
+#info-container{
+    /* padding-top: 30px; */
+        padding: 30px 5% 0 5%;
+}
+#info-item1,
+#info-item2{
+    width: 100%;
+}
+#info-item1 table,
+#info-item1 th,
+#info-item1 td{
+    border: 1px solid rgb(60,60,60);
+}
+#info-item1 table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(255,255,255);
+    margin-bottom: 20px;
+}
+#info-item1 th,
+#info-item1 td{
+    padding: 10px;
+    text-align: center;
+}
+#info-item1 th{
+    width: 150px;
+    text-align: left;
+}
+#info-item1 li{
+    font-size: 14px;
+}
+#info-item2 section:last-child{
+    padding-top: 30px;
+}
+
+#info-item2 section{
+    padding-top: 30px;
+}
+
+/* 営業時間・交通アクセス */
+#cont-4{
+    background-image: url(../images/bg_4.jpg);
+}
+#open{
+    display: block;
+    padding: 0 5%;
+}
+/* #open>div{
+    background-image: url(../images/illust_5.png);
+    background-repeat: no-repeat;
+    background-position: 20px top;
+    background-size: contain;
+     padding-left: 120px;
+        
+} */
+#open p{
+    margin-bottom: 10px;
+}
+#access-container{
+    padding-top: 30px;
+}
+#access-container div{
+        width: 100%;
+        padding: 0 5%;
+}
+#access-container dl{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+#access-container dt{
+    flex: 0 1 30%;
+}
+#access-container dd{
+    flex: 0 1 70%;
+}
+#access-container ul{
+    list-style-type: disc;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+#access-container>p{
+        width: 100%;
+    background-color: rgb(200, 200, 200);
+}
+
+/* お知らせ */
+#cont-5{
+    background-image: url(../images/bg_5.jpg);
+}
+#cont-5 dl{
+        height: 350px;
+        overflow-y: auto;
+        flex-flow: row wrap;
+    justify-content: space-between;
+        padding: 0 5%;
+}
+#cont-5 dl div{
+        width: 100%;
+    display: grid;
+    grid-template-rows: 40px auto;
+        grid-template-columns: 1fr 30%;
+    column-gap: 20px;
+    border-bottom: 1px dashed rgb(180,180,180);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+#cont-5 dt{
+    font-size: 14px;
+}
+#cont-5 dd:first-of-type{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+#cont-5 dd:last-of-type{
+    grid-row: 1/3;
+    grid-column: 2/3;
+}
+#cont-5 img{
+    /* height: 30%; */
+        aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: bottom center;
+}
+
