@@ -260,9 +260,9 @@ h1{
     padding-left: 25px;
     margin-bottom: 10px;
 }
-#access-container>p{
+#access-container>iframe{
         width: 100%;
-    background-color: rgb(200, 200, 200);
+    
 }
 
 /* お知らせ */
@@ -436,8 +436,8 @@ h1{
         padding: 0 ;
 }
 
-#access-container>p{
-    width: 640px;
+#access-container>iframe{
+    width: 630px;
     
 }
 
